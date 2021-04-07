@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* 清除默认样式 */
+body,ul,li,table{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background: url(../img/bg.jpg) no-repeat fixed;
+}
+/* 定义头部高度宽度及阴影效果 */
+#header{
+	height: 60px;
+	width: auto;
+	background-color: #4057ce;
+	box-shadow: #000000 3px 1px 6px 1px;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+/* 标题样式 */
+#header .span-title{
+	font-size: 30px;
+	color: GhostWhite;
+	text-shadow: 0px 0px 5px #FFF;
+}
+/* 搜索框美化 */
+#header a{
+	margin-left: 75%;
+}
+#header a:hover{
+	text-shadow: 0px 0px 5px #FFF;
+}
+/* 侧边栏大小及阴影效果 */
+#nav{
+	margin-left: 5px;
+	position: fixed;
+	height: 495px;
+	width: 200px;
+	background-color: GhostWhite;
+	display: inline-block;
+	box-shadow: #000000 0px 1px 1px 1px;
+}
+#nav #join{
+	width: 200px;
+	height: 150px;
+	background: url(../img/nether.gif);
+}
+#join a{
+	display: block;
+	height: 38px;
+	width: 130px;
+	padding-top: 56px;
+	padding-bottom: 56px;
+	padding-left: 27px;
+}
+#nav ul{
+	padding-top: 10px;
+	font-size: 23px;
+	width: 200px;
+	line-height: 45px;
+}
+#nav li i{
+	padding-left: 10px;
+	padding-right: 5px;
+}
+#nav li{
+	border-bottom: #FFF solid 1px;
+}
+#nav li:hover{
+	background-color: rgba(187,255,255,0.5);
+	text-shadow: 0px 0px 5px blue;
+	color: #000000;
+}
+#home{
+	float: right;
+	clear: both;
+	width: 1250px;
+	height: auto; /*后期改为auto*/
+	margin: 30px;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: #000 1px 1px 6px 1px;
+	border-radius: 30px;
+}
+#s-title{
+	width: 1238px;
+	height: 50px;
+	border: #1E9FFF solid 6px;
+	line-height: 50px;
+	border-radius: 30px;
+	background: #97FFFF;
+}
+#s-title-font{
+	padding-left: 20px;
+	font-size: 30px;
+	text-shadow: 0px 0px 5px snow;
+	margin-right: 150px;
+}
+#s-title-gg{
+	margin-left: 50px;
+	font-size: 16px;
+}
+#s-title-gg:hover{
+	text-shadow: 0px 0px 5px snow;
+}
+.server{
+	width: 1200px;
+	height: auto;
+	margin: 10px auto;
+	border: #000000 2px solid;
+	border-radius: 20px;
+	float: left;
+	background-color: rgba(255,255,255,0.95);
+	box-shadow: 1px 1px 5px 5px #fcacb2;
+}
+.juzhong{
+	width: 1200px;
+	height: auto;
+	margin: 10px auto;
+}
+/* 定义Bnner大小为原尺寸的80% 即610X110 x 80% */
+.server .banner{
+	float: left;
+	padding: 10px;
+	width: 40%;
+}
+.server table{
+	float: left;
+	line-height: 35px;
+	margin-top: 16px;
+	/* display: inline-block; */
+}
+/* motd图片大小32x32 */
+.motd{
+	height: 32px;
+}
+.server-name{
+	font-size: 30px;
+	text-shadow: 0px 0px 20px yellow;
+}
+.renshu{
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+	float: right;
+	width: auto;
+	padding: 0px 10px;
+	font-size: 16px;
+	background-color: #00FF00;
+	border-radius: 30px;
+}
+.server td{
+	border: #000000 3px solid;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.yanzheng{
+	background-color: #f9fafb;
+}
+.yanzheng:hover{
+	background-color: #cbd4dc;
+}
+.server td:hover{
+	text-shadow: 0px 0px 20px #000;
+}
+.info{
+	border: #000000 1px solid;
+	width: auto;
+	padding: 2px 3px;
+	border-radius: 10px;
+	color: dimgray;
+}
+.server:hover{
+	box-shadow: 1px 1px 5px 5px hotpink;
+}
+/* 美化滚动条 */
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+    scrollbar-arrow-color:red;
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+    scrollbar-arrow-color:red;
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
